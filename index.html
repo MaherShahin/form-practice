@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up-Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="left-container"> 
+            <div class="left-container-text">
+                Welcome to my Personal Website!<br> This is not a real website <small>-in case you couldn't tell...</small>I am just testing out forms and stuff.
+            </div>
+        </div>
+        <div class="right-container">
+            <div class="intro">This is not a real online Service. You know you need something like this in your life to help your realize your deepest dreams.<br>Sign up now to get Started!
+            </div>
+            <div class="form-section">
+                <p>Let's do this</p>
+                <form action="/" id="form">
+                    <input type="text" name="name" placeholder="Name" class="">
+                    <input type="text" name="phone-number" placeholder="Phone Number" 
+                    pattern='[0-9]{10}'>
+                     <input type="text" name="zip-code" placeholder="Zip Code" >
+                    <input type="text" name="email" placeholder="Email">
+                    <input type="password" name="password" placeholder="Password" id="password" required
+                    pattern='(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}'>
+                    <input type="password" name="confirm-password" placeholder="Confirm Password" id="confirm-password" required
+                    pattern='(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}'>
+                </form>
+            </div>
+            <div class="foot">
+                <button type="submit" form="form" id="submit-btn">Create Account</button>
+                <p>Already have an account? <a href="login.html">Login</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

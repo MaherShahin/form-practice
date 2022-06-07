@@ -1,0 +1,115 @@
+* {
+    font-family: 'Source Code Pro', monospace;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.left-container {
+    background-image: url(imgs/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 40%;
+    padding: 2%;
+}
+
+.left-container-text{
+    background-color: rgba(0,0,0,0.6);
+    min-width: 100%;
+    padding: 20px;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+}
+
+.right-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #d8d4cf;
+    min-width: 60%;
+    min-height: 100vh;
+}
+
+.intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    font-size: 20px;
+    background-color: rgb(66, 66, 66);
+    color: white;
+    min-height: 23%;
+}
+
+.form-section {
+    display: flex;
+    justify-self:flex-start;
+    align-self: center;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    font-size: 20px;
+    min-height: 23%;
+}
+
+.form-section form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    padding: 20px;
+    font-size: 20px;
+    min-height: 23%;
+    
+}
+
+.form-section form input {
+    border-radius: 10px;
+    padding: 10px;
+    margin: 4px;
+}
+
+.foot {
+    display: flex;
+    min-width: 100%;
+    align-items: flex-start;
+    justify-content: flex-start;
+    justify-self: flex-end;
+    flex-direction: column;
+    padding: 20px;
+    font-size: 22px;
+    background-color: whitesmoke;
+    min-height: 23%;
+}
+
+.foot button {
+    background-color: #96b47c;
+    color: white;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.form-section form label {
+    font-size: 14px;
+}
+
+input:invalid{
+    border-color: red;
+    
+}
